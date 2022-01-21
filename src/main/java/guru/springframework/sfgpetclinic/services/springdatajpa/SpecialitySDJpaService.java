@@ -1,11 +1,11 @@
 package guru.springframework.sfgpetclinic.services.springdatajpa;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import guru.springframework.sfgpetclinic.model.Speciality;
 import guru.springframework.sfgpetclinic.repositories.SpecialtyRepository;
 import guru.springframework.sfgpetclinic.services.SpecialtyService;
-
-import java.util.HashSet;
-import java.util.Set;
 
 
 public class SpecialitySDJpaService implements SpecialtyService {
@@ -42,4 +42,6 @@ public class SpecialitySDJpaService implements SpecialtyService {
     public void deleteById(Long aLong) {
         specialtyRepository.deleteById(aLong);
     }
+    
+    
 }
